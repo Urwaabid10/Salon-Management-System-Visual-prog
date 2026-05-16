@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "path": "SalonManagementSystem.slnx",
+    "projects": [
+      "SalonManagementSystem\\SalonManagementSystem.csproj"
+    ]
+  }
+}
