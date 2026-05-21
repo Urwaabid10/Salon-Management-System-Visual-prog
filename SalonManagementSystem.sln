@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
 VisualStudioVersion = 18.6.11806.211 stable
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalonManagementSystem", "SalonManagementSystem.csproj", "{2ED49B7D-62AE-4625-BB5D-8CE624F7CAE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalonManagementSystem", "SalonManagementSystem\SalonManagementSystem.csproj", "{2ED49B7D-62AE-4625-BB5D-8CE624F7CAE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EA248EE6-719C-4173-B6F4-59B222AA5781}
+		SolutionGuid = {88245538-322D-482A-9E88-B75213314CCD}
 	EndGlobalSection
 EndGlobal
