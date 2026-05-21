@@ -1,6 +1,6 @@
 SALON MANAGEMENT SYSTEM
 A desktop application for managing salon operations: customers, services, appointments, and billing.
-Repository: https://github.com/Urwaabid10/salon-management-system.git
+Repository: https://github.com/Urwaabid10/Salon-Management-System-Visual-prog.git
 
 FEATURES
 
@@ -21,7 +21,7 @@ Operating System:   Windows 7+
 INSTALLATION
 
 Clone Repository
-git clone https://github.com/Urwaabid10/salon-management-system.git
+https://github.com/Urwaabid10/Salon-Management-System-Visual-prog.git
 Install Prerequisites
 
 Visual Studio Community
@@ -64,7 +64,7 @@ Status:             Active Development
 
 SUPPORT
 Email:              aurwa11910@gmail.com
-Repository:         https://github.com/Urwaabid10/salon-management-system
+Repository:         https://github.com/Urwaabid10/Salon-Management-System-Visual-prog.git
 
 LICENSE
 Educational project for database and software engineering coursework.
