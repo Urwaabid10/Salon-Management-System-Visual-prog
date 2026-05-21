@@ -1,4 +1,4 @@
-﻿namespace SalonManagementSystem
+﻿namespace SalonManagementSystem.Forms
 {
     partial class ServiceForm
     {

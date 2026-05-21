@@ -1,8 +1,10 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Windows.Forms;
 
-namespace SalonManagementSystem
+using SalonManagementSystem.Models;
+using SalonManagementSystem.Database;
+
+namespace SalonManagementSystem.Forms
 {
     public partial class LoginForm : Form
     {
@@ -13,37 +15,35 @@ namespace SalonManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Check if all fields are filled
             if (txtUsername.Text == "" || txtPassword.Text == "")
             {
                 MessageBox.Show("Please enter all fields");
                 return;
             }
+            // Create a new user object and set its properties
+            User u = new User();
 
-            var conn = DBConnection.GetConnection();
-            conn.Open();
+            u.Username = txtUsername.Text;
+            u.Password = txtPassword.Text;
 
-            string query = "SELECT * FROM users WHERE username=@u AND password=@p";
-            MySqlCommand cmd = new MySqlCommand(query, conn);
+            UserDB db = new UserDB();
 
-            cmd.Parameters.AddWithValue("@u", txtUsername.Text);
-            cmd.Parameters.AddWithValue("@p", txtPassword.Text);
-
-            MySqlDataReader reader = cmd.ExecuteReader();
-
-            if (reader.HasRows)
+            bool check = db.Login(u);
+            // If the login is successful, show the dashboard form
+            if (check)
             {
                 MessageBox.Show("Login Successful!");
 
                 Dashboard d = new Dashboard();
                 d.Show();
+
                 this.Hide();
             }
             else
             {
                 MessageBox.Show("Invalid Username or Password");
             }
-
-            conn.Close();
         }
     }
 }
